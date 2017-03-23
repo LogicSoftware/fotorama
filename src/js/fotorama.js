@@ -676,6 +676,8 @@ jQuery.Fotorama = function ($fotorama, opts) {
   function thumbsDraw (pos, loadFLAG) {
     if (o_nav !== 'thumbs' || isNaN(pos)) return;
 
+    if (!data) return;
+
     var leftLimit = -pos,
         rightLimit = -pos + measures.nw;
 
